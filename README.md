@@ -1,30 +1,28 @@
 # Convênia - Teste prático - DEV PHP JR
 
-> Não se preocupe caso não consiga finalizar o teste, é uma forma de analisar como você pesquisa, programa e resolve os desafios de programação, mas seria legal vê-lo pronto.
 
-### Requisitos:
-- PHP
-- Banco de dados
+**Aplicação de gerenciamento de produtos.**
 
-### Desejável:
-- Laravel
+ ***
+ Aplicação construída com laravel  5.3
 
-### Descrição do teste:
+***
+**Descrição**
 
-Desenvolver uma interface de api onde seja possível fazer uma inserção de venda de um vendedor, onde o retorno dessa inserção  será o calculo da comissão da venda (que será de 8.5% em cima do valor da venda) e os dados básicos do vendedor.
+A aplicação consiste um sistema que é possível cadastar venda de vendedores e visualizar a comissão recebida pelo vendedor
 
-#### Dados de retorno da API
-- Nome
-- Email
-- Valor de comissão
+***
 
+***
 
-> Não é necessário fazer CRUD de vendedores, pode inserir os dados diretamente no banco de dados
+**Instalação e configuração**
 
-> Não é necessário nenhuma forma de login/autenticação
++ Clone o repositório
++ Instale as dependências: `(composer update)`
++ Configure as variáveis de ambiente  no arquivo `.env`
++ Gere uma chave para a aplicação `php artisan key:generate`
++ Execute as `migrations` para a criação das tabelas: `php artisan migrate`
 
-### Forma de de entrega:
+**Obs**
 
-Crie um fork deste repositório e após finalizado nos envie por email
-
-
++ Caso queira popular o banco de dados, execute o comando : `php artisan db:seed`
